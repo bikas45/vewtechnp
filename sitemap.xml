@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://VEW TECHNP.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://VEW TECHNP.org/company.html</loc><priority>0.9</priority></url>
+  <url><loc>https://VEW TECHNP.org/solutions.html</loc><priority>0.9</priority></url>
+  <url><loc>https://VEW TECHNP.org/projects.html</loc><priority>0.8</priority></url>
+  <url><loc>https://VEW TECHNP.org/technology.html</loc><priority>0.8</priority></url>
+  <url><loc>https://VEW TECHNP.org/Principles.html</loc><priority>0.7</priority></url>
+  <url><loc>https://VEW TECHNP.org/founder.html</loc><priority>0.8</priority></url>
+  <url><loc>https://VEW TECHNP.org/contact.html</loc><priority>0.9</priority></url>
+</urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<seoStrategy
+    company="VEW TECHNP"
+    website="https://VEW TECHNP.org"
+    country="Nepal"
+    language="English,Nepali,Roman-Nepali">
+
+    <!-- ========================= -->
+    <!-- WEB DEVELOPMENT -->
+    <!-- ========================= -->
+
+    <category name="Web Development">
+
+        <keyword>website development Nepal</keyword>
+        <keyword>web development Nepal</keyword>
+        <keyword>website development company Nepal</keyword>
+        <keyword>web development company Nepal</keyword>
+        <keyword>website developer Nepal</keyword>
+        <keyword>web developer Nepal</keyword>
+        <keyword>professional website development Nepal</keyword>
+        <keyword>custom website development Nepal</keyword>
+        <keyword>custom web development Nepal</keyword>
+        <keyword>business website development Nepal</keyword>
+        <keyword>responsive website development Nepal</keyword>
+        <keyword>modern website development Nepal</keyword>
+        <keyword>SEO friendly website development Nepal</keyword>
+        <keyword>website development services Nepal</keyword>
+        <keyword>web development agency Nepal</keyword>
+        <keyword>web development company Kathmandu</keyword>
+        <keyword>website development company Kathmandu</keyword>
+        <keyword>web developer Kathmandu</keyword>
+        <keyword>website developer Kathmandu</keyword>
+        <keyword>web development Pokhara</keyword>
+        <keyword>web development Chitwan</keyword>
+        <keyword>web development Bharatpur</keyword>
+        <keyword>web development Butwal</keyword>
+        <keyword>web development Biratnagar</keyword>
+        <keyword>web development Dharan</keyword>
+        <keyword>web development Hetauda</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- WEB DESIGN -->
+    <!-- ========================= -->
+
+    <category name="Web Design">
+
+        <keyword>website design Nepal</keyword>
+        <keyword>website design company Nepal</keyword>
+        <keyword>web design Nepal</keyword>
+        <keyword>web design company Nepal</keyword>
+        <keyword>professional web design Nepal</keyword>
+        <keyword>modern web design Nepal</keyword>
+        <keyword>business website design Nepal</keyword>
+        <keyword>corporate website design Nepal</keyword>
+        <keyword>custom website design Nepal</keyword>
+        <keyword>responsive web design Nepal</keyword>
+        <keyword>mobile friendly website Nepal</keyword>
+        <keyword>website redesign Nepal</keyword>
+        <keyword>website redesign company Nepal</keyword>
+        <keyword>web design agency Nepal</keyword>
+        <keyword>web designer Nepal</keyword>
+        <keyword>web designer Kathmandu</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- SOFTWARE -->
+    <!-- ========================= -->
+
+    <category name="Software Development">
+
+        <keyword>software development Nepal</keyword>
+        <keyword>software development company Nepal</keyword>
+        <keyword>software company Nepal</keyword>
+        <keyword>custom software development Nepal</keyword>
+        <keyword>business software development Nepal</keyword>
+        <keyword>enterprise software development Nepal</keyword>
+        <keyword>custom business software Nepal</keyword>
+        <keyword>software solutions Nepal</keyword>
+        <keyword>software development agency Nepal</keyword>
+        <keyword>software company Kathmandu</keyword>
+        <keyword>software development Kathmandu</keyword>
+        <keyword>software company Pokhara</keyword>
+        <keyword>software development Pokhara</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- WEB APPLICATION -->
+    <!-- ========================= -->
+
+    <category name="Web Applications">
+
+        <keyword>web application development Nepal</keyword>
+        <keyword>web app development Nepal</keyword>
+        <keyword>web application company Nepal</keyword>
+        <keyword>custom web application Nepal</keyword>
+        <keyword>business web application Nepal</keyword>
+        <keyword>web based software Nepal</keyword>
+        <keyword>custom web app Nepal</keyword>
+        <keyword>admin dashboard development Nepal</keyword>
+        <keyword>API development Nepal</keyword>
+        <keyword>API integration Nepal</keyword>
+        <keyword>frontend development Nepal</keyword>
+        <keyword>backend development Nepal</keyword>
+        <keyword>full stack development Nepal</keyword>
+        <keyword>full stack developer Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- ECOMMERCE -->
+    <!-- ========================= -->
+
+    <category name="Ecommerce">
+
+        <keyword>ecommerce website development Nepal</keyword>
+        <keyword>ecommerce website Nepal</keyword>
+        <keyword>ecommerce development Nepal</keyword>
+        <keyword>ecommerce website design Nepal</keyword>
+        <keyword>online store development Nepal</keyword>
+        <keyword>online shopping website Nepal</keyword>
+        <keyword>online store website Nepal</keyword>
+        <keyword>ecommerce developer Nepal</keyword>
+        <keyword>ecommerce web developer Nepal</keyword>
+        <keyword>custom ecommerce website Nepal</keyword>
+        <keyword>ecommerce company Nepal</keyword>
+        <keyword>ecommerce solution Nepal</keyword>
+        <keyword>ecommerce website Kathmandu</keyword>
+        <keyword>eSewa ecommerce website Nepal</keyword>
+        <keyword>Khalti ecommerce website Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- UI UX -->
+    <!-- ========================= -->
+
+    <category name="UI UX Design">
+
+        <keyword>UI UX design Nepal</keyword>
+        <keyword>UI UX design company Nepal</keyword>
+        <keyword>UI design Nepal</keyword>
+        <keyword>UX design Nepal</keyword>
+        <keyword>UI UX agency Nepal</keyword>
+        <keyword>website UI design Nepal</keyword>
+        <keyword>website UX design Nepal</keyword>
+        <keyword>modern UI UX Nepal</keyword>
+        <keyword>professional UI UX design Nepal</keyword>
+        <keyword>Figma designer Nepal</keyword>
+        <keyword>Figma UI UX Nepal</keyword>
+        <keyword>product design Nepal</keyword>
+        <keyword>digital product design Nepal</keyword>
+        <keyword>UI UX designer Kathmandu</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- SEO -->
+    <!-- ========================= -->
+
+    <category name="SEO">
+
+        <keyword>SEO Nepal</keyword>
+        <keyword>SEO company Nepal</keyword>
+        <keyword>SEO services Nepal</keyword>
+        <keyword>SEO agency Nepal</keyword>
+        <keyword>SEO expert Nepal</keyword>
+        <keyword>SEO consultant Nepal</keyword>
+        <keyword>website SEO Nepal</keyword>
+        <keyword>technical SEO Nepal</keyword>
+        <keyword>local SEO Nepal</keyword>
+        <keyword>Google SEO Nepal</keyword>
+        <keyword>SEO friendly website Nepal</keyword>
+        <keyword>SEO web development Nepal</keyword>
+        <keyword>on page SEO Nepal</keyword>
+        <keyword>off page SEO Nepal</keyword>
+        <keyword>SEO optimization Nepal</keyword>
+        <keyword>local business SEO Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- AI -->
+    <!-- ========================= -->
+
+    <category name="Artificial Intelligence">
+
+        <keyword>AI development Nepal</keyword>
+        <keyword>AI company Nepal</keyword>
+        <keyword>AI solutions Nepal</keyword>
+        <keyword>AI development company Nepal</keyword>
+        <keyword>AI software development Nepal</keyword>
+        <keyword>AI automation Nepal</keyword>
+        <keyword>AI automation company Nepal</keyword>
+        <keyword>AI chatbot development Nepal</keyword>
+        <keyword>AI chatbot Nepal</keyword>
+        <keyword>custom AI chatbot Nepal</keyword>
+        <keyword>AI web application Nepal</keyword>
+        <keyword>AI integration Nepal</keyword>
+        <keyword>AI API integration Nepal</keyword>
+        <keyword>artificial intelligence company Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- AUTOMATION -->
+    <!-- ========================= -->
+
+    <category name="Automation">
+
+        <keyword>business automation Nepal</keyword>
+        <keyword>automation solutions Nepal</keyword>
+        <keyword>AI automation Nepal</keyword>
+        <keyword>business process automation Nepal</keyword>
+        <keyword>workflow automation Nepal</keyword>
+        <keyword>digital automation Nepal</keyword>
+        <keyword>business automation company Nepal</keyword>
+        <keyword>automation software Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- MOBILE APPS -->
+    <!-- ========================= -->
+
+    <category name="Mobile App Development">
+
+        <keyword>mobile app development Nepal</keyword>
+        <keyword>mobile application development Nepal</keyword>
+        <keyword>mobile app development company Nepal</keyword>
+        <keyword>app development Nepal</keyword>
+        <keyword>app developer Nepal</keyword>
+        <keyword>Android app development Nepal</keyword>
+        <keyword>iOS app development Nepal</keyword>
+        <keyword>Flutter app development Nepal</keyword>
+        <keyword>React Native development Nepal</keyword>
+        <keyword>custom mobile app Nepal</keyword>
+        <keyword>mobile application company Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- BUSINESS -->
+    <!-- ========================= -->
+
+    <category name="Business Solutions">
+
+        <keyword>website for small business Nepal</keyword>
+        <keyword>website for business Nepal</keyword>
+        <keyword>business website Nepal</keyword>
+        <keyword>website for startup Nepal</keyword>
+        <keyword>startup website development Nepal</keyword>
+        <keyword>website for local business Nepal</keyword>
+        <keyword>professional business website Nepal</keyword>
+        <keyword>corporate website Nepal</keyword>
+        <keyword>digital solutions Nepal</keyword>
+        <keyword>digital solutions company Nepal</keyword>
+        <keyword>technology solutions Nepal</keyword>
+        <keyword>IT solutions Nepal</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- NEPALI -->
+    <!-- ========================= -->
+
+    <category name="Nepali Search Terms">
+
+        <keyword>नेपालमा वेबसाइट बनाउने</keyword>
+        <keyword>नेपालमा वेबसाइट बनाउने कम्पनी</keyword>
+        <keyword>वेबसाइट बनाउने कम्पनी नेपाल</keyword>
+        <keyword>वेबसाइट डिजाइन नेपाल</keyword>
+        <keyword>वेबसाइट डिजाइन गर्ने कम्पनी</keyword>
+        <keyword>वेबसाइट डेभलपमेन्ट नेपाल</keyword>
+        <keyword>वेब डेभलपमेन्ट नेपाल</keyword>
+        <keyword>वेब डिजाइन नेपाल</keyword>
+        <keyword>नेपालमा वेबसाइट कसले बनाउँछ</keyword>
+        <keyword>नेपालमा वेबसाइट बनाउन कति पर्छ</keyword>
+        <keyword>वेबसाइट बनाउन कति पैसा लाग्छ</keyword>
+        <keyword>व्यवसायको वेबसाइट बनाउने</keyword>
+        <keyword>बिजनेस वेबसाइट नेपाल</keyword>
+        <keyword>अनलाइन स्टोर बनाउने</keyword>
+        <keyword>ईकमर्स वेबसाइट नेपाल</keyword>
+        <keyword>सफ्टवेयर बनाउने कम्पनी नेपाल</keyword>
+        <keyword>मोबाइल एप बनाउने कम्पनी नेपाल</keyword>
+        <keyword>SEO कम्पनी नेपाल</keyword>
+        <keyword>SEO सेवा नेपाल</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- ROMAN NEPALI -->
+    <!-- ========================= -->
+
+    <category name="Roman Nepali Search Terms">
+
+        <keyword>Nepal ma website banaune company</keyword>
+        <keyword>Nepal ma website banaune</keyword>
+        <keyword>website banaune company Nepal</keyword>
+        <keyword>website banauna kati parcha</keyword>
+        <keyword>website banaune developer Nepal</keyword>
+        <keyword>website design garne company Nepal</keyword>
+        <keyword>business ko website banaune</keyword>
+        <keyword>online pasal website Nepal</keyword>
+        <keyword>online store banaune Nepal</keyword>
+        <keyword>ecommerce website banaune Nepal</keyword>
+        <keyword>website ko price Nepal</keyword>
+        <keyword>website banauna kati paisa lagcha</keyword>
+        <keyword>software banaune company Nepal</keyword>
+        <keyword>mobile app banaune company Nepal</keyword>
+        <keyword>SEO garne company Nepal</keyword>
+        <keyword>Google ma website rank garne Nepal</keyword>
+        <keyword>Nepal ko IT company</keyword>
+        <keyword>Nepal ko software company</keyword>
+        <keyword>Nepal ko web development company</keyword>
+
+    </category>
+
+
+    <!-- ========================= -->
+    <!-- BRAND -->
+    <!-- ========================= -->
+
+    <category name="VEW TECHNP Brand">
+
+        <keyword>VEW TECHNP</keyword>
+        <keyword>VEW TECHNP Nepal</keyword>
+        <keyword>VEW TECHNP web development</keyword>
+        <keyword>VEW TECHNP website development</keyword>
+        <keyword>VEW TECHNP website design</keyword>
+        <keyword>VEW TECHNP software development</keyword>
+        <keyword>VEW TECHNP Nepal web developer</keyword>
+        <keyword>VEW TECHNP Nepal software company</keyword>
+        <keyword>VEW TECHNP Nepal IT company</keyword>
+        <keyword>VEW TECHNP Nepal technology company</keyword>
+        <keyword>VEW TECHNP SEO</keyword>
+        <keyword>VEW TECHNP UI UX</keyword>
+        <keyword>VEW TECHNP AI</keyword>
+        <keyword>VEW TECHNP automation</keyword>
+        <keyword>VEW TECHNP ecommerce</keyword>
+        <keyword>VEW TECHNP digital solutions</keyword>
+        <keyword>VEW TECHNP web design Nepal</keyword>
+        <keyword>VEW TECHNP software Nepal</keyword>
+        <keyword>VEW TECHNP developer Nepal</keyword>
+
+    </category>
+
+</seoStrategy>

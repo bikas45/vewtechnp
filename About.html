@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============ SEO ============ -->
+<title>About VEW TECHNP — Practical Software, Web & Automation Studio in Nepal</title>
+<meta name="description" content="VEW TECHNP NP is a Nepal-based technology company building practical digital solutions: software, web development, UI/UX, automation, SaaS, and business management systems.">
+<meta name="keywords" content="VEW TECHNP, about VEW TECHNP, Nepal software company, Kathmandu web development, SaaS Nepal, business automation Nepal, Bikas Pokharel">
+<meta name="author" content="VEW TECHNP">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://VEW TECHNP.org/about.html">
+
+<!-- ============ OPEN GRAPH ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VEW TECHNP">
+<meta property="og:title" content="About VEW TECHNP — Practical Digital Solutions from Nepal">
+<meta property="og:description" content="A Nepal-based technology company building software, web platforms, automation, and business systems that solve real problems.">
+<meta property="og:url" content="https://VEW TECHNP.org/about.html">
+<meta property="og:locale" content="en_US">
+
+<!-- ============ TWITTER ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About VEW TECHNP — Practical Digital Solutions from Nepal">
+<meta name="twitter:description" content="Software, web development, UI/UX, automation, and business systems built with purpose.">
+
+<!-- ============ FAVICON ============ -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f0f12'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'>V</text></svg>">
+
+<!-- ============ FONTS ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============ STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About VEW TECHNP",
+  "url": "https://VEW TECHNP.org/about.html",
+  "description": "About VEW TECHNP — a Nepal-based technology company building software, web, UI/UX, automation, and business management systems.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "VEW TECHNP",
+    "legalName": "VEW TECHNP NP",
+    "url": "https://VEW TECHNP.org",
+    "email": "VEW TECHNPnp@gmail.com",
+    "slogan": "Ideas into systems. Problems into solutions.",
+    "foundingLocation": "Kathmandu, Nepal",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressRegion": "Bagmati",
+      "addressCountry": "NP"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Bikas Pokharel",
+      "jobTitle": "Founder & Full-Stack Developer"
+    },
+    "areaServed": "Worldwide",
+    "knowsAbout": [
+      "Software Development",
+      "Web Development",
+      "UI/UX Design",
+      "Automation",
+      "SaaS Products",
+      "Business Management Systems",
+      "AI Integration",
+      "Emerging Technologies"
+    ]
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --bg:#f6f6f8;
+  --bg-alt:#eeeff2;
+  --surface:#ffffff;
+  --ink:#0f0f12;
+  --ink-soft:#52525b;
+  --ink-mute:#8a8a94;
+  --line:#e4e4e9;
+  --line-strong:#cfcfd6;
+  --accent:#4f46e5;
+  --accent-soft:#eef0ff;
+  --accent-glow:rgba(79,70,229,.14);
+  --code:'JetBrains Mono',ui-monospace,monospace;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --display:'Fraunces',Georgia,serif;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow-sm:0 1px 2px rgba(15,15,18,.04),0 1px 3px rgba(15,15,18,.03);
+  --shadow-md:0 4px 12px rgba(15,15,18,.05),0 1px 3px rgba(15,15,18,.04);
+  --shadow-lg:0 20px 40px -12px rgba(15,15,18,.10);
+  --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);font-size:16px;line-height:1.6;
+  color:var(--ink);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(246,246,248,.82);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px;}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--display);font-weight:600;font-size:19px;
+  letter-spacing:-.01em;
+}
+.brand-mark{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,var(--ink) 0%,var(--accent) 100%);
+  display:grid;place-items:center;color:#fff;
+  font-family:var(--code);font-size:12px;font-weight:700;
+}
+.nav-links{display:flex;gap:4px;align-items:center;}
+.nav-links a{
+  font-size:14px;font-weight:500;color:var(--ink-soft);
+  padding:8px 12px;border-radius:8px;
+  transition:color .15s,background .15s;
+}
+.nav-links a:hover{color:var(--ink);background:rgba(0,0,0,.04);}
+.nav-links a.active{color:var(--ink);background:rgba(0,0,0,.05);}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--ink);color:#fff;
+  font-size:13.5px;font-weight:500;
+  padding:9px 16px;border-radius:9px;
+  transition:transform .15s,box-shadow .15s;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.menu-toggle{
+  display:none;background:none;border:0;cursor:pointer;padding:8px;
+}
+.menu-toggle span{
+  display:block;width:20px;height:2px;background:var(--ink);
+  margin:4px 0;border-radius:2px;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1,h2,h3,h4{
+  font-family:var(--display);font-weight:600;
+  letter-spacing:-.02em;line-height:1.15;
+}
+h1{font-size:clamp(2rem,4.5vw,3.25rem);}
+h2{font-size:clamp(1.6rem,3vw,2.25rem);}
+h3{font-size:1.2rem;}
+p{color:var(--ink-soft);}
+.eyebrow{
+  font-family:var(--code);font-size:11.5px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);
+  display:inline-block;
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+section{padding:88px 0;position:relative;}
+section.tight{padding:56px 0;}
+.section-head{margin-bottom:48px;max-width:720px;}
+.section-head h2{margin:14px 0;}
+.section-head p{font-size:16.5px;max-width:620px;}
+
+/* ============================================================
+   HERO with BACKGROUND SVG ART
+   ============================================================ */
+.hero{
+  padding:110px 0 80px;text-align:center;position:relative;
+  overflow:hidden;
+}
+.hero-bg-art{
+  position:absolute;inset:0;
+  z-index:0;pointer-events:none;
+  opacity:.55;
+}
+.hero > .wrap{position:relative;z-index:1;}
+.hero h1{max-width:880px;margin:22px auto 24px;}
+.hero .lede{
+  font-size:18px;max-width:680px;margin:0 auto 40px;
+  color:var(--ink-soft);line-height:1.6;
+}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+/* ============================================================
+   FEATURE CARD
+   ============================================================ */
+.feature{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:44px;
+  box-shadow:var(--shadow-sm);
+  position:relative;overflow:hidden;
+}
+.feature .label{
+  font-family:var(--code);font-size:11.5px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.12em;color:var(--accent);
+  display:block;margin-bottom:12px;
+}
+
+/* ============================================================
+   CAPABILITY CARDS WITH ICONS
+   ============================================================ */
+.grid{display:grid;gap:22px;}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+
+.cap-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:28px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,border-color .25s;
+  display:flex;flex-direction:column;gap:14px;
+  position:relative;overflow:hidden;
+}
+.cap-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent) 0%,#7c6df0 100%);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .3s ease;
+}
+.cap-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-lg);
+  border-color:var(--line-strong);
+}
+.cap-card:hover::before{transform:scaleX(1);}
+
+.cap-icon{
+  width:48px;height:48px;border-radius:12px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  display:grid;place-items:center;
+  transition:transform .25s,background .25s,color .25s;
+}
+.cap-card:hover .cap-icon{
+  background:var(--accent);
+  color:#fff;
+  transform:scale(1.06) rotate(-3deg);
+}
+.cap-icon svg{width:24px;height:24px;stroke-width:1.75;}
+
+.cap-card h3{
+  font-family:var(--sans);font-size:16px;font-weight:600;
+  letter-spacing:-.01em;color:var(--ink);
+}
+.cap-card p{font-size:14.5px;line-height:1.6;}
+
+/* ============================================================
+   FOUNDER DOSSIER WITH PORTRAIT PHOTO
+   ============================================================ */
+.founder-layout{
+  display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:start;
+}
+.founder-portrait{
+  position:relative;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-md);
+  aspect-ratio:1/1;
+  background:#e9eaf2;
+}
+.founder-photo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.founder-badge{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(15,15,18,.92) 0%,rgba(15,15,18,.6) 60%,transparent 100%);
+  color:#fff;
+  padding:36px 18px 16px;
+  font-size:12px;line-height:1.4;
+  z-index:2;
+}
+.founder-badge strong{display:block;font-size:14px;font-weight:600;margin-bottom:2px;}
+.founder-badge span{color:#c4c4cf;font-family:var(--code);font-size:11px;}
+
+/* ============================================================
+   PRINCIPLE CARDS
+   ============================================================ */
+.principle-card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:26px;
+  box-shadow:var(--shadow-sm);
+  display:flex;flex-direction:column;gap:10px;
+  transition:transform .2s,box-shadow .2s;
+}
+.principle-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.principle-num{
+  font-family:var(--display);font-size:34px;font-weight:600;
+  color:var(--accent);line-height:1;letter-spacing:-.03em;
+  margin-bottom:4px;
+}
+.principle-card h3{
+  font-family:var(--sans);font-size:16px;font-weight:600;
+  letter-spacing:-.01em;
+}
+.principle-card p{font-size:14.5px;}
+
+/* ============================================================
+   PROCESS VISUAL
+   ============================================================ */
+.process-visual{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:40px;
+  box-shadow:var(--shadow-sm);
+  overflow-x:auto;
+}
+.process-svg{min-width:680px;width:100%;height:auto;}
+
+/* ============================================================
+   QUOTE
+   ============================================================ */
+.quote{
+  background:linear-gradient(135deg,#fafaff 0%,#f0f0fb 100%);
+  border-left:3px solid var(--accent);
+  border-radius:10px;
+  padding:28px 32px;
+  font-style:italic;color:var(--ink);
+  font-size:17px;line-height:1.7;
+  position:relative;
+}
+.quote::before{
+  content:'"';position:absolute;top:-8px;left:18px;
+  font-family:var(--display);font-size:70px;color:var(--accent);
+  opacity:.18;line-height:1;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:10px;
+  font-size:14.5px;font-weight:500;
+  transition:transform .15s,box-shadow .15s,background .15s;
+  border:1px solid transparent;cursor:pointer;
+  font-family:var(--sans);
+}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:var(--surface);border-color:var(--line-strong);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-1px);}
+.btn svg{width:16px;height:16px;}
+
+/* ============================================================
+   STATS ROW
+   ============================================================ */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  padding:36px 0;
+}
+.stat{
+  text-align:center;
+  padding:24px 16px;
+  border-right:1px solid var(--line);
+}
+.stat:last-child{border-right:0;}
+.stat .num{
+  font-family:var(--display);font-size:38px;font-weight:600;
+  color:var(--ink);letter-spacing:-.03em;line-height:1;
+}
+.stat .num span{color:var(--accent);}
+.stat .lbl{
+  font-family:var(--code);font-size:11.5px;font-weight:500;
+  color:var(--ink-mute);text-transform:uppercase;
+  letter-spacing:.1em;margin-top:10px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{
+  background:var(--bg-alt);border-top:1px solid var(--line);
+  padding:64px 0 32px;margin-top:40px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:40px;margin-bottom:48px;
+}
+.footer-grid h4{
+  font-family:var(--code);font-size:11.5px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink);margin-bottom:16px;
+}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-grid a{font-size:14px;color:var(--ink-soft);}
+.footer-grid a:hover{color:var(--ink);}
+.footer-bottom{
+  padding-top:24px;border-top:1px solid var(--line-strong);
+  display:flex;justify-content:space-between;align-items:center;
+  gap:16px;font-family:var(--code);font-size:12px;
+  color:var(--ink-mute);flex-wrap:wrap;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:900px){
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr);}
+  .founder-layout{grid-template-columns:1fr;gap:28px;}
+  .founder-portrait{max-width:300px;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .stat:nth-child(2){border-right:0;}
+}
+@media(max-width:720px){
+  section{padding:64px 0;}
+  .hero{padding:72px 0 56px;}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+  .nav-links{
+    display:none;position:absolute;top:68px;left:0;right:0;
+    flex-direction:column;gap:4px;padding:16px 24px 24px;
+    background:var(--surface);border-bottom:1px solid var(--line);
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:12px 14px;}
+  .menu-toggle{display:block;}
+  .footer-grid{grid-template-columns:1fr;}
+  .feature{padding:28px;}
+  .stats{grid-template-columns:1fr;gap:12px;}
+  .stat{border-right:0;border-bottom:1px solid var(--line);}
+  .stat:last-child{border-bottom:0;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">V</span> VEW TECHNP
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="projects.html">Projects</a>
+      <a href="technology.html">Technology</a>
+      <a href="Principles.html">Principles</a>
+      <a href="founder.html">Founder</a>
+      <a href="About.html" class="active">About us</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Start a Project →</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       HERO WITH BACKGROUND SVG ART
+       ============================================================ -->
+  <section class="hero">
+    <svg class="hero-bg-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1" fill="#0f0f12" opacity="0.08"/>
+        </pattern>
+        <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.14"/>
+          <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1200" height="600" fill="url(#dots)"/>
+      <ellipse cx="600" cy="200" rx="500" ry="300" fill="url(#glow)"/>
+      <circle cx="150" cy="120" r="4" fill="#4f46e5" opacity="0.4"/>
+      <circle cx="1050" cy="480" r="6" fill="#4f46e5" opacity="0.3"/>
+      <circle cx="950" cy="100" r="3" fill="#0f0f12" opacity="0.2"/>
+      <circle cx="250" cy="500" r="5" fill="#4f46e5" opacity="0.25"/>
+    </svg>
+
+    <div class="wrap">
+      <span class="eyebrow">About VEW TECHNP NP</span>
+      <h1>Practical technology.<br/>Real-world problems solved.</h1>
+      <p class="lede">VEW TECHNP NP is a Nepal-based technology company focused on building practical digital solutions — software, web platforms, UI/UX, automation, SaaS, and business management systems.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">
+          Contact us          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="projects.html" class="btn btn-ghost">See Our Work</a>
+      </div>
+
+      <div class="stats" style="margin-top:56px;max-width:880px;margin-left:auto;margin-right:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);">
+        <div class="stat"><div class="num">8<span>+</span></div><div class="lbl">Service Domains</div></div>
+        <div class="stat"><div class="num">100<span>%</span></div><div class="lbl">Problem-First</div></div>
+        <div class="stat"><div class="num">1</div><div class="lbl">Nepal HQ</div></div>
+        <div class="stat"><div class="num">24<span>h</span></div><div class="lbl">Response Time</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHO WE ARE
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="feature">
+        <span class="label">Who We Are</span>
+        <p style="font-size:17px;color:var(--ink);line-height:1.75;max-width:880px;">VEW TECHNP NP is a Nepal-based technology company focused on building practical digital solutions that solve real-world problems. We work across software development, web development, UI/UX design, automation, SaaS products, business management systems, and emerging technologies.</p>
+        <p style="font-size:17px;color:var(--ink);line-height:1.75;max-width:880px;margin-top:16px;">Our goal is not simply to build websites or applications that look good. We focus on understanding the problem first, designing a clear user experience, and building reliable systems that are useful, scalable, and easy to use. From business websites and custom software to automation platforms and complete digital management systems, we turn ideas and challenges into working technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CAPABILITIES WITH ICONS
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2>Across the full digital stack.</h2>
+        <p>From a single website to a complete business platform — we build the pieces that make technology actually useful.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Software Development</h3>
+          <p>Custom applications and production systems built for reliability, scale, and daily use.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, fast websites and web platforms engineered for real traffic and real users.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Clear, considered interfaces that respect the person on the other side of the screen.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Automation</h3>
+          <p>Workflows and systems that eliminate repetitive manual work and human error.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h3>SaaS Products</h3>
+          <p>Cloud-based tools designed to be sold, scaled, and maintained for the long term.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          </div>
+          <h3>Business Management Systems</h3>
+          <p>ERP, inventory, POS, and operational dashboards consolidated into one clear console.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Emerging Technologies</h3>
+          <p>Applied exploration of AI, intelligent interfaces, and next-generation web systems.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Custom Technology</h3>
+          <p>Bespoke logic, parsing engines, integrations, and solutions for non-standard needs.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Technical Consulting</h3>
+          <p>System audits, architecture reviews, and honest technical direction before a project begins.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS VISUAL (SVG DIAGRAM)
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How We Work</span>
+        <h2>A four-step process. No shortcuts.</h2>
+        <p>Every project moves through the same disciplined path — from understanding the problem to delivering a system that lasts.</p>
+      </div>
+
+      <div class="process-visual">
+        <svg class="process-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-label="Four-step engineering process: Discover, Design, Build, Ship">
+          <defs>
+            <linearGradient id="stepGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#7c6df0"/>
+            </linearGradient>
+          </defs>
+
+          <line x1="100" y1="110" x2="800" y2="110" stroke="#e4e4e9" stroke-width="2" stroke-dasharray="4 6"/>
+
+          <g>
+            <circle cx="100" cy="110" r="36" fill="url(#stepGrad)"/>
+            <text x="100" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#ffffff">01</text>
+            <text x="100" y="180" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600" fill="#0f0f12">Discover</text>
+            <text x="100" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#8a8a94">Understand the problem</text>
+          </g>
+
+          <g>
+            <circle cx="340" cy="110" r="36" fill="url(#stepGrad)"/>
+            <text x="340" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#ffffff">02</text>
+            <text x="340" y="180" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600" fill="#0f0f12">Design</text>
+            <text x="340" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#8a8a94">Shape the experience</text>
+          </g>
+
+          <g>
+            <circle cx="580" cy="110" r="36" fill="url(#stepGrad)"/>
+            <text x="580" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#ffffff">03</text>
+            <text x="580" y="180" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600" fill="#0f0f12">Build</text>
+            <text x="580" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#8a8a94">Engineer the system</text>
+          </g>
+
+          <g>
+            <circle cx="820" cy="110" r="36" fill="#0f0f12"/>
+            <text x="820" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#ffffff">04</text>
+            <text x="820" y="180" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600" fill="#0f0f12">Ship</text>
+            <text x="820" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#8a8a94">Deliver & maintain</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOUNDER DOSSIER — WITH PHOTO
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="feature">
+        <span class="label">Our Founder</span>
+        <div class="founder-layout" style="margin-top:16px;">
+          <div class="founder-portrait">
+            <img src="pp.jpeg" alt="Bikas Pokharel — Founder of VEW TECHNP" class="founder-photo">
+            <div class="founder-badge">
+              <strong>Bikas Pokharel</strong>
+              <span>Founder &amp; Full-Stack Developer</span>
+            </div>
+          </div>
+          <div>
+            <h2 style="margin-bottom:14px;">A system builder from Nepal.</h2>
+            <p style="font-size:16.5px;color:var(--ink);line-height:1.75;">VEW TECHNP NP was founded by <strong>Bikas Pokharel</strong>, a full-stack developer and system builder from Nepal. His approach combines development, design, experimentation, and problem-solving to create technology with a practical purpose.</p>
+
+            <div style="margin-top:24px;">
+              <span style="font-family:var(--code);font-size:11.5px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em;font-weight:600;">Core Expertise</span>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;">
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">Full-Stack Development</span>
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">System Architecture</span>
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">UI/UX Design</span>
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">Business Automation</span>
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">AI Workflows</span>
+                <span style="font-family:var(--code);font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:6px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);">Digital Products</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRINCIPLES
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our Principles</span>
+        <h2>Technology should remove complexity — not add it.</h2>
+        <p>We believe technology should improve the way people work and create new possibilities. Here's the mindset behind everything we build.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="principle-card">
+          <div class="principle-num">01</div>
+          <h3>Problem First</h3>
+          <p>Understand the real problem before choosing a framework or writing a line of code.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-num">02</div>
+          <h3>Design With Purpose</h3>
+          <p>Clear interfaces, thoughtful structure, and decisions that respect the user's time.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-num">03</div>
+          <h3>Build What Matters</h3>
+          <p>We do not add technology because it is possible. We add it because it has a reason.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-num">04</div>
+          <h3>Reliable Systems</h3>
+          <p>Software should be useful, scalable, and easy to maintain long after launch day.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-num">05</div>
+          <h3>Keep Exploring</h3>
+          <p>AI, automation, intelligent interfaces — we explore new tools while staying grounded.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-num">06</div>
+          <h3>Builder Mindset</h3>
+          <p>Curiosity, continuous learning, and a refusal to stop at "good enough."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       QUOTE
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="feature">
+        <span class="label">What Drives Us</span>
+        <blockquote class="quote" style="margin-top:12px;">
+          "VEW TECHNP NP is built around curiosity, continuous learning, thoughtful design, and a builder mindset. We are not interested in adding technology just because it is possible. We build with a reason, a purpose, and a real problem to solve."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="feature" style="text-align:center;background:linear-gradient(135deg,#ffffff 0%,#f5f5fc 100%);">
+        <span class="label">Let's Build</span>
+        <h2 style="margin-bottom:16px;">Have an idea, a business problem, or a process that needs a better solution?</h2>
+        <p style="max-width:640px;margin:0 auto 28px;font-size:16.5px;">Let's build it. Whether you need a website, custom software, automation, a complete digital system — or simply want to explore what technology could do for your idea — get in touch with VEW TECHNP NP and turn your idea into something real.</p>
+        <div class="hero-actions" style="margin-top:0;">
+          <a href="contact.html" class="btn btn-primary">
+            Get in Touch
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="mailto:VEW TECHNPnp@gmail.com" class="btn btn-ghost">Email Us Directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:16px;">
+          <span class="brand-mark">V</span> VEW TECHNP
+        </a>
+        <p style="font-size:14px;max-width:320px;">Ideas into systems. Problems into solutions. Built in Nepal for global standards.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="Principles.html">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+  <h4>Contact</h4>
+  <ul>
+    <li>
+      <a href="contact.html"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        Contact us
+      </a>
+    </li>
+    <li>
+      <a href="mailto:vewtechnp@gmail.com"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        vewtechnp@gmail.com
+      </a>
+    </li>
+    <li>
+      <a href="tel:+9779749385759"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +977 9749385759
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/9779749385759" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#25D366';this.querySelector('svg').style.stroke='#25D366';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='#25D366';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </li>
+  </ul>
+</div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 VEW TECHNP. All rights reserved.</span><span>Kawasoti · Nepal</span></div>
+  </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 VEW TECHNP NP. All rights reserved.</span>
+      <span>Kathmandu · Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#navLinks a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>

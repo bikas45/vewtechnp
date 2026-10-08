@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Active Systems Built by VEW TECHNP</title>
+<meta name="description" content="Explore VEW TECHNP's active portfolio: TileFlow ERP, ResultPublish Pro, Crisis Dispatch Protocol, and the Workflow Dispatcher automation agent.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://VEW TECHNP.org/projects.html">
+<meta property="og:title" content="Projects — VEW TECHNP Active Portfolio">
+<meta property="og:description" content="ERP, EdTech, crisis response, and automation systems in production.">
+<meta property="og:url" content="https://VEW TECHNP.org/projects.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f0f12'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'>V</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --bg:#f6f6f8;--bg-alt:#eeeff2;--surface:#ffffff;
+  --ink:#0f0f12;--ink-soft:#52525b;--ink-mute:#8a8a94;
+  --line:#e4e4e9;--line-strong:#cfcfd6;
+  --accent:#4f46e5;--accent-soft:#eef0ff;
+  --code:'JetBrains Mono',ui-monospace,monospace;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --display:'Fraunces',Georgia,serif;
+  --shadow-sm:0 1px 2px rgba(15,15,18,.04),0 1px 3px rgba(15,15,18,.03);
+  --shadow-md:0 4px 12px rgba(15,15,18,.05),0 1px 3px rgba(15,15,18,.04);
+  --shadow-lg:0 20px 40px -12px rgba(15,15,18,.10);
+  --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);font-size:16px;line-height:1.6;
+  color:var(--ink);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(246,246,248,.82);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px;}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--display);font-weight:600;font-size:19px;
+  letter-spacing:-.01em;
+}
+.brand-mark{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,var(--ink) 0%,var(--accent) 100%);
+  display:grid;place-items:center;color:#fff;
+  font-family:var(--code);font-size:12px;font-weight:700;
+}
+.nav-links{display:flex;gap:4px;align-items:center;}
+.nav-links a{
+  font-size:14px;font-weight:500;color:var(--ink-soft);
+  padding:8px 12px;border-radius:8px;
+  transition:color .15s,background .15s;
+}
+.nav-links a:hover{color:var(--ink);background:rgba(0,0,0,.04);}
+.nav-links a.active{color:var(--ink);background:rgba(0,0,0,.05);}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--ink);color:#fff;
+  font-size:13.5px;font-weight:500;
+  padding:9px 16px;border-radius:9px;
+  transition:transform .15s,box-shadow .15s;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px;}
+.menu-toggle span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px;}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.15;}
+h1{font-size:clamp(2rem,4.5vw,3.25rem);}
+h2{font-size:clamp(1.6rem,3vw,2.25rem);}
+h3{font-size:1.2rem;}
+p{color:var(--ink-soft);}
+
+.eyebrow{
+  font-family:var(--code);font-size:11.5px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);
+  display:inline-block;
+}
+
+section{padding:88px 0;position:relative;}
+section.tight{padding:56px 0;}
+
+/* ============================================================
+   STATS STRIP
+   ============================================================ */
+.stats-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:16px;margin-top:40px;
+}
+.stat{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;padding:24px 20px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.stat:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--line-strong);
+}
+.stat .num{
+  font-family:var(--display);font-size:36px;
+  font-weight:600;color:var(--ink);line-height:1;
+  letter-spacing:-.03em;display:block;
+  margin-bottom:8px;
+}
+.stat .num .accent{color:var(--accent);}
+.stat .label{
+  font-family:var(--code);font-size:11px;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-mute);
+}
+.stat .desc{font-size:13.5px;color:var(--ink-soft);margin-top:6px;line-height:1.5;}
+
+/* ============================================================
+   PROJECT CARDS
+   ============================================================ */
+.grid{display:grid;gap:20px;}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+
+.card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:16px;padding:28px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+  display:flex;flex-direction:column;gap:12px;
+}
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--line-strong);
+}
+.card h3{font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:-.01em;}
+.card p{font-size:14.5px;line-height:1.6;}
+.card .num{font-family:var(--code);font-size:11.5px;color:var(--ink-mute);font-weight:600;letter-spacing:.05em;}
+
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px;}
+.tag{
+  font-family:var(--code);font-size:11.5px;font-weight:500;
+  padding:4px 10px;border-radius:6px;
+  background:var(--bg-alt);color:var(--ink-soft);
+  border:1px solid var(--line);
+}
+.tag.accent{background:var(--accent-soft);color:var(--accent);border-color:rgba(79,70,229,.2);}
+
+.meta-row{
+  display:flex;flex-wrap:wrap;gap:24px;
+  font-family:var(--code);font-size:12px;color:var(--ink-mute);
+  padding-top:16px;border-top:1px solid var(--line);
+  margin-top:auto;
+}
+.meta-row strong{color:var(--ink);font-weight:600;}
+
+/* ============================================================
+   PROCESS / STEPS
+   ============================================================ */
+.process-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:20px;position:relative;
+}
+.process-step{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;padding:28px 22px;
+  box-shadow:var(--shadow-sm);
+  position:relative;
+  transition:transform .25s,box-shadow .25s;
+}
+.process-step:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.process-step .step-num{
+  font-family:var(--display);font-size:44px;
+  font-weight:600;color:var(--accent);
+  opacity:.18;line-height:1;
+  position:absolute;top:16px;right:20px;
+}
+.process-step .step-icon{
+  width:44px;height:44px;border-radius:11px;
+  background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;
+  margin-bottom:18px;
+}
+.process-step .step-icon svg{width:22px;height:22px;stroke-width:1.75;}
+.process-step h4{
+  font-family:var(--sans);font-size:15px;font-weight:600;
+  color:var(--ink);letter-spacing:-.01em;margin-bottom:8px;
+}
+.process-step p{font-size:13.5px;line-height:1.55;}
+
+/* ============================================================
+   TECH STACK
+   ============================================================ */
+.stack-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:12px;
+}
+.stack-item{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:20px 16px;
+  text-align:center;
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+  cursor:pointer;
+}
+.stack-item:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--accent);
+}
+.stack-item .icon{
+  width:40px;height:40px;border-radius:10px;
+  background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;
+  margin:0 auto 12px;
+  transition:background .25s,color .25s,transform .25s;
+}
+.stack-item:hover .icon{
+  background:var(--accent);color:#fff;
+  transform:scale(1.08) rotate(-4deg);
+}
+.stack-item .icon svg{width:20px;height:20px;stroke-width:1.75;}
+.stack-item .name{
+  font-size:13.5px;font-weight:600;color:var(--ink);
+  margin-bottom:2px;
+}
+.stack-item .cat{
+  font-family:var(--code);font-size:10.5px;
+  color:var(--ink-mute);letter-spacing:.06em;
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline-strip{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  gap:0;position:relative;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:36px 28px;
+  box-shadow:var(--shadow-sm);
+  overflow:hidden;
+}
+.timeline-strip::before{
+  content:'';position:absolute;
+  top:72px;left:60px;right:60px;
+  height:2px;background:var(--line);
+  z-index:0;
+}
+.tl-step{
+  text-align:center;position:relative;z-index:1;
+  padding:0 8px;
+}
+.tl-dot{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--surface);
+  border:2px solid var(--line-strong);
+  display:grid;place-items:center;
+  margin:0 auto 16px;
+  font-family:var(--code);font-size:12px;font-weight:700;
+  color:var(--ink-mute);
+  transition:all .3s;
+}
+.tl-step.done .tl-dot{
+  background:var(--accent);color:#fff;
+  border-color:var(--accent);
+  box-shadow:0 0 0 4px rgba(79,70,229,.15);
+}
+.tl-step.active .tl-dot{
+  background:var(--surface);color:var(--accent);
+  border-color:var(--accent);
+  box-shadow:0 0 0 4px rgba(79,70,229,.15);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 4px rgba(79,70,229,.15);}
+  50%{box-shadow:0 0 0 8px rgba(79,70,229,.08);}
+}
+.tl-step .label{
+  font-size:13px;font-weight:600;color:var(--ink);
+  margin-bottom:4px;
+}
+.tl-step .sub{
+  font-family:var(--code);font-size:10.5px;
+  color:var(--ink-mute);letter-spacing:.06em;
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-list{
+  display:flex;flex-direction:column;gap:12px;
+  max-width:820px;
+}
+.faq-item{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  transition:border-color .2s,box-shadow .2s;
+}
+.faq-item:hover{border-color:var(--line-strong);}
+.faq-item.open{border-color:var(--accent);box-shadow:var(--shadow-sm);}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:18px 22px;
+  cursor:pointer;user-select:none;
+  font-size:15px;font-weight:600;color:var(--ink);
+  font-family:var(--sans);
+  transition:background .2s;
+}
+.faq-q:hover{background:var(--bg-alt);}
+.faq-q .icon{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--bg-alt);color:var(--ink-soft);
+  display:grid;place-items:center;flex-shrink:0;
+  transition:all .3s;
+}
+.faq-item.open .faq-q .icon{
+  background:var(--accent);color:#fff;
+  transform:rotate(45deg);
+}
+.faq-q .icon svg{width:12px;height:12px;stroke-width:2.5;}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .35s ease,padding .35s ease;
+  padding:0 22px;
+}
+.faq-item.open .faq-a{
+  max-height:300px;padding:0 22px 20px;
+}
+.faq-a p{font-size:14.5px;line-height:1.65;color:var(--ink-soft);}
+
+/* ============================================================
+   NEWSLETTER / UPDATES
+   ============================================================ */
+.updates-box{
+  background:linear-gradient(135deg,#ffffff 0%,#f5f5fc 100%);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:48px 40px;
+  box-shadow:var(--shadow-sm);
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.updates-box::before{
+  content:'';position:absolute;
+  top:-100px;right:-100px;
+  width:300px;height:300px;
+  background:radial-gradient(circle,rgba(79,70,229,.12) 0%,transparent 70%);
+  border-radius:50%;pointer-events:none;
+}
+.updates-box h2{margin-bottom:12px;position:relative;z-index:1;}
+.updates-box p{
+  font-size:16px;max-width:520px;margin:0 auto 28px;
+  position:relative;z-index:1;
+}
+.updates-form{
+  display:flex;gap:10px;max-width:460px;
+  margin:0 auto;position:relative;z-index:1;
+  flex-wrap:wrap;
+}
+.updates-form input{
+  flex:1;min-width:200px;
+  font-family:var(--sans);font-size:14.5px;
+  padding:12px 16px;border-radius:10px;
+  border:1px solid var(--line-strong);
+  background:#fff;color:var(--ink);
+  transition:border-color .2s,box-shadow .2s;
+}
+.updates-form input:focus{
+  outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(79,70,229,.12);
+}
+.updates-form button{
+  font-family:var(--sans);font-size:14.5px;font-weight:500;
+  padding:12px 24px;border-radius:10px;
+  background:var(--ink);color:#fff;border:0;
+  cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+.updates-form button:hover{
+  transform:translateY(-1px);
+  box-shadow:var(--shadow-md);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:10px;
+  font-size:14.5px;font-weight:500;
+  transition:transform .15s,box-shadow .15s,background .15s;
+  border:1px solid transparent;cursor:pointer;
+  font-family:var(--sans);
+}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:var(--surface);border-color:var(--line-strong);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-1px);}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{
+  background:var(--bg-alt);border-top:1px solid var(--line);
+  padding:64px 0 32px;margin-top:40px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:40px;margin-bottom:48px;
+}
+.footer-grid h4{
+  font-family:var(--code);font-size:11.5px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink);margin-bottom:16px;
+}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-grid a{font-size:14px;color:var(--ink-soft);}
+.footer-grid a:hover{color:var(--ink);}
+.footer-bottom{
+  padding-top:24px;border-top:1px solid var(--line-strong);
+  display:flex;justify-content:space-between;align-items:center;
+  gap:16px;font-family:var(--code);font-size:12px;
+  color:var(--ink-mute);flex-wrap:wrap;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:980px){
+  .grid-2{grid-template-columns:1fr;}
+  .grid-3{grid-template-columns:repeat(2,1fr);}
+  .grid-4{grid-template-columns:repeat(2,1fr);}
+  .stats-strip{grid-template-columns:repeat(2,1fr);}
+  .process-grid{grid-template-columns:repeat(2,1fr);}
+  .timeline-strip{grid-template-columns:repeat(3,1fr);gap:24px;}
+  .timeline-strip::before{display:none;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+}
+@media(max-width:720px){
+  section{padding:64px 0;}
+  .grid-3,.grid-4,.process-grid{grid-template-columns:1fr;}
+  .stats-strip{grid-template-columns:1fr;}
+  .timeline-strip{grid-template-columns:1fr;gap:20px;}
+  .nav-links{
+    display:none;position:absolute;top:68px;left:0;right:0;
+    flex-direction:column;gap:4px;padding:16px 24px 24px;
+    background:var(--surface);border-bottom:1px solid var(--line);
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:12px 14px;}
+  .menu-toggle{display:block;}
+  .footer-grid{grid-template-columns:1fr;}
+  .updates-box{padding:32px 24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="brand-mark">V</span> VEW TECHNP</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="technology.html">Technology</a>
+      <a href="Principles.html">Principles</a>
+      <a href="founder.html">Founder</a>
+      <a href="About.html">About us</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Contact us →</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Active Portfolio</span>
+      <h1 style="margin:14px 0 20px;max-width:820px;">Things we're building.</h1>
+      <p style="font-size:18px;max-width:640px;margin-bottom:32px;">Four systems currently deployed or in active development — each solving a real, painful operational problem.</p>
+
+      <!-- Stats strip -->
+      <div class="stats-strip">
+        <div class="stat">
+          <span class="num">04</span>
+          <span class="label">Active Systems</span>
+          <p class="desc">In production or active development</p>
+        </div>
+        <div class="stat">
+          <span class="num">12<span class="accent">+</span></span>
+          <span class="label">Technologies</span>
+          <p class="desc">Across frontend, backend, and infra</p>
+        </div>
+        <div class="stat">
+          <span class="num">1M<span class="accent">+</span></span>
+          <span class="label">Queries Handled</span>
+          <p class="desc">Peak load served with zero downtime</p>
+        </div>
+        <div class="stat">
+          <span class="num">99.9<span class="accent">%</span></span>
+          <span class="label">Uptime</span>
+          <p class="desc">Production deployments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid grid-2">
+
+        <div class="card">
+          <div class="tags"><span class="tag accent">Active Product</span><span class="tag">Enterprise Retail</span><span class="tag">v2.4.0</span></div>
+          <h3>TileFlow ERP</h3>
+          <p style="color:var(--ink);font-weight:500;font-size:13.5px;">Multi-Warehouse Inventory & Point-of-Sale System</p>
+          <div style="border-top:1px solid var(--line);padding-top:14px;margin-top:6px;">
+            <span class="num">The Friction</span>
+            <p style="margin-top:6px;">Fragmented POS terminals and warehouse logs leading to overselling, untracked inventory leaks, and erratic billing in high-volume tile and construction supply stores.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:14px;">
+            <span class="num" style="color:var(--accent);">The Engineered Solution</span>
+            <p style="margin-top:6px;color:var(--ink);">An offline-tolerant, high-speed invoicing platform featuring instant stock reconciliation across dispersed yards, invoice generation, and financial ledger consolidation.</p>
+          </div>
+          <div class="meta-row"><span>Stack: <strong>React · Node.js · MySQL · Redis</strong></span><span>Production Deployed</span></div>
+        </div>
+
+        <div class="card">
+          <div class="tags"><span class="tag accent">Internal Product</span><span class="tag">EdTech Engine</span><span class="tag">v1.8.2</span></div>
+          <h3>ResultPublish Pro</h3>
+          <p style="color:var(--ink);font-weight:500;font-size:13.5px;">High-Throughput Academic Result Delivery Engine</p>
+          <div style="border-top:1px solid var(--line);padding-top:14px;margin-top:6px;">
+            <span class="num">The Friction</span>
+            <p style="margin-top:6px;">Catastrophic server crashes during simultaneous result publications, mixed with human error in manual GPA tallying across thousands of examinees.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:14px;">
+            <span class="num" style="color:var(--accent);">The Engineered Solution</span>
+            <p style="margin-top:6px;color:var(--ink);">A distributed rendering pipeline that pre-computes signed marksheets, serving millions of peak student queries with zero DB choke through optimized cached snapshots.</p>
+          </div>
+          <div class="meta-row"><span>Stack: <strong>Node.js · Express · Redis</strong></span><span>Institutional Deployment</span></div>
+        </div>
+
+        <div class="card">
+          <div class="tags"><span class="tag">Prototype</span><span class="tag">Crisis Response</span><span class="tag">v0.9.1</span></div>
+          <h3>Crisis Dispatch Protocol</h3>
+          <p style="color:var(--ink);font-weight:500;font-size:13.5px;">Lightweight Emergency Routing & Incident Triage</p>
+          <div style="border-top:1px solid var(--line);padding-top:14px;margin-top:6px;">
+            <span class="num">The Friction</span>
+            <p style="margin-top:6px;">Network congestion, chaotic call centers, and inaccurate location handoffs delaying first responders during localized geological and urban emergencies.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:14px;">
+            <span class="num" style="color:var(--accent);">The Engineered Solution</span>
+            <p style="margin-top:6px;color:var(--ink);">Ultra-low bandwidth packet-based geo-alerting system paired with an automated triage console that groups distress pings into priority clusters for rapid deployment.</p>
+          </div>
+          <div class="meta-row"><span>Stack: <strong>WebSockets · WebGIS · Node.js</strong></span><span>Active Prototype</span></div>
+        </div>
+
+        <div class="card">
+          <div class="tags"><span class="tag">Automation</span><span class="tag accent">AI Automation</span><span class="tag">v0.4.5</span></div>
+          <h3>Workflow Dispatcher</h3>
+          <p style="color:var(--ink);font-weight:500;font-size:13.5px;">Context-Aware Ingestion Agent</p>
+          <div style="border-top:1px solid var(--line);padding-top:14px;margin-top:6px;">
+            <span class="num">The Friction</span>
+            <p style="margin-top:6px;">Dozens of hours wasted by administrative teams reading disorganized client emails, manually parsing parameters, and creating Jira or CRM tickets.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:14px;">
+            <span class="num" style="color:var(--accent);">The Engineered Solution</span>
+            <p style="margin-top:6px;color:var(--ink);">An automated worker that consumes unformatted inbound streams, extracts typed JSON entities, validates permissions, and dispatches API tasks directly.</p>
+          </div>
+          <div class="meta-row"><span>Stack: <strong>Python · REST Webhooks</strong></span><span>Active Testing</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div style="margin-bottom:36px;">
+        <span class="eyebrow">How We Work</span>
+        <h2 style="margin-top:12px;">From problem to production.</h2>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h4>Understand</h4>
+          <p>We map the real workflow, talk to the people doing the work, and find the actual friction points.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          </div>
+          <h4>Architect</h4>
+          <p>We design the data model, APIs, and UI before writing code. No guessing later.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>Build</h4>
+          <p>Iterative development with weekly check-ins. You see progress, not just promises.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h4>Ship & Support</h4>
+          <p>We deploy, monitor, and stay on for fixes. Production is where the real work begins.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TECH STACK
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div style="margin-bottom:36px;">
+        <span class="eyebrow">Built With</span>
+        <h2 style="margin-top:12px;">Technologies we use daily.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 22a10 10 0 0 1-10-10"/></svg></div><div class="name">React</div><div class="cat">Frontend</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><div class="name">Node.js</div><div class="cat">Backend</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="name">MySQL</div><div class="cat">Database</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="name">Redis</div><div class="cat">Cache</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="name">Express</div><div class="cat">Backend</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><div class="name">WebSockets</div><div class="cat">Realtime</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg></div><div class="name">Python</div><div class="cat">Automation</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="name">WebGIS</div><div class="cat">Geo</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="name">REST APIs</div><div class="cat">Integration</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="name">Linux</div><div class="cat">Infra</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><div class="name">Docker</div><div class="cat">Deploy</div></div>
+        <div class="stack-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div><div class="name">Cloud</div><div class="cat">Hosting</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TIMELINE
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div style="margin-bottom:36px;">
+        <span class="eyebrow">Development Stages</span>
+        <h2 style="margin-top:12px;">Every project follows this path.</h2>
+      </div>
+
+      <div class="timeline-strip">
+        <div class="tl-step done">
+          <div class="tl-dot">01</div>
+          <div class="label">Discovery</div>
+          <div class="sub">Week 1</div>
+        </div>
+        <div class="tl-step done">
+          <div class="tl-dot">02</div>
+          <div class="label">Design</div>
+          <div class="sub">Week 2–3</div>
+        </div>
+        <div class="tl-step active">
+          <div class="tl-dot">03</div>
+          <div class="label">Build</div>
+          <div class="sub">Week 4–10</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot">04</div>
+          <div class="label">Test</div>
+          <div class="sub">Week 11–12</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot">05</div>
+          <div class="label">Deploy</div>
+          <div class="sub">Week 13+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div style="margin-bottom:36px;">
+        <span class="eyebrow">Common Questions</span>
+        <h2 style="margin-top:12px;">Things people ask us.</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>How long does a typical project take?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>Most projects range from 6 to 14 weeks depending on scope. ERP systems and complex automation typically take longer than focused MVPs. We give you a realistic timeline upfront — not an optimistic one.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Do you work with clients outside Nepal?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>Yes. We're based in Kawasoti, Nepal, but work remotely with clients globally. Communication happens over email, video calls, and shared project boards. Time zone is rarely a blocker.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>What's your pricing model?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>We scope projects individually. Most engagements are fixed-price per milestone, with an option for monthly retainer during active development. No hidden fees, no surprise invoices.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Do you provide ongoing support after launch?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>Yes. Every project includes a support window after launch, and we offer extended maintenance plans. Production systems need care — we don't just drop code and leave.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Can you take over an existing codebase?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>Often yes, after a technical audit. We'll assess code quality, architecture, and documentation before committing. If the codebase is a liability, we'll tell you honestly.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Do you build mobile apps?</span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a"><p>Our primary focus is web platforms and backend systems. For mobile, we build responsive PWAs and can integrate with native shells when needed. We'll recommend the right approach for your use case.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       UPDATES / NEWSLETTER
+       ============================================================ -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="updates-box">
+        <span class="eyebrow" style="margin-bottom:12px;">Stay Updated</span>
+        <h2>Get project updates & new builds.</h2>
+        <p>Occasional emails about what we're shipping, new systems, and technical notes from the studio. No spam.</p>
+        <form class="updates-form" onsubmit="event.preventDefault();alert('Thanks! You\'ll hear from us soon.');this.reset();">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:16px;">
+          <span class="brand-mark">V</span> VEW TECHNP
+        </a>
+        <p style="font-size:14px;max-width:320px;">Ideas into systems. Problems into solutions. Built in Nepal for global standards.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="company.html">About</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="Principles.html">Principles</a></li>
+        </ul>
+      </div>
+      <div>
+       <div>
+  <h4>Contact</h4>
+  <ul>
+    <li>
+      <a href="contact.html"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        Contact us
+      </a>
+    </li>
+    <li>
+      <a href="mailto:vewtechnp@gmail.com"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        vewtechnp@gmail.com
+      </a>
+    </li>
+    <li>
+      <a href="tel:+9779749385759"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#4f46e5';this.querySelector('svg').style.stroke='#4f46e5';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='currentColor';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +977 9749385759
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/9779749385759" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#52525b;text-decoration:none;transition:color .15s;"
+         onmouseover="this.style.color='#25D366';this.querySelector('svg').style.stroke='#25D366';"
+         onmouseout="this.style.color='#52525b';this.querySelector('svg').style.stroke='#25D366';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;transition:stroke .15s;">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </li>
+  </ul>
+</div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 VEW TECHNP. All rights reserved.</span><span>Kawasoti · Nepal</span></div>
+  </div>
+    <div class="footer-bottom">
+      <span>© 2025 VEW TECHNP. All rights reserved.</span>
+      <span>Kawasoti · Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT — Mobile Menu + FAQ Accordion
+     ============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* ---------- Mobile menu ---------- */
+  var navLinks = document.getElementById('navLinks');
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+    });
+  });
+
+  /* ---------- FAQ Accordion ---------- */
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var q = item.querySelector('.faq-q');
+    q.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function (other) {
+        other.classList.remove('open');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
